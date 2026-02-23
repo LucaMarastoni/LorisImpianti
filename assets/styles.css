@@ -536,7 +536,13 @@ p {
   }
 
   .hero {
-    padding-top: 2rem;
+    padding-top: 2.7rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.5rem, 10.6vw, 3.2rem);
+    line-height: 1.12;
+    margin-top: 0.3rem;
   }
 
   .services-grid,
@@ -547,6 +553,140 @@ p {
   .emergency-inner {
     flex-direction: column;
     align-items: flex-start;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --container: 1100px;
+  }
+
+  .top-bar-inner {
+    min-height: 64px;
+    justify-content: flex-end;
+    padding-block: 0.2rem;
+    gap: 0.7rem;
+  }
+
+  .top-bar-text {
+    display: none;
+  }
+
+  .top-bar-actions {
+    gap: 0.5rem;
+  }
+
+  .top-bar .btn {
+    min-height: 42px;
+    padding: 0.52rem 0.85rem;
+    font-size: 0.92rem;
+  }
+
+  .hero {
+    min-height: max(70vh, 600px);
+    display: flex;
+    align-items: center;
+    padding-top: 96px;
+    padding-bottom: 64px;
+  }
+
+  .hero-grid {
+    max-width: 880px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 32px;
+    padding-right: 32px;
+    text-align: center;
+  }
+
+  .hero-copy {
+    text-align: center;
+  }
+
+  .hero .eyebrow {
+    font-size: clamp(1.35rem, 1.8vw, 1.7rem);
+    font-weight: 800;
+    margin-bottom: 0.9rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(60px, 5vw, 64px);
+    line-height: 1.1;
+    font-weight: 800;
+  }
+
+  .hero .btn-xl {
+    min-height: 50px;
+    padding: 0.7rem 0.95rem;
+    font-size: 1rem;
+  }
+
+  .hero-subhead {
+    max-width: 720px;
+    margin: 0 auto 1.4rem;
+    font-size: clamp(18px, 1.4vw, 20px);
+  }
+
+  .hero .hero-cta {
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .hero .hero-cta .btn {
+    min-width: 220px;
+    max-width: 320px;
+    width: auto;
+    flex: 0 1 auto;
+  }
+
+  .trust-strip .container,
+  .reviews-section .container,
+  #servizi .container {
+    max-width: 1100px;
+  }
+
+  .trust-strip-grid {
+    width: 100%;
+    margin-inline: auto;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 14px;
+  }
+
+  .trust-item {
+    min-height: 72px;
+    height: 100%;
+  }
+
+  .reviews-section .container {
+    max-width: 1100px;
+  }
+
+  .reviews-grid {
+    align-items: stretch;
+    gap: 1rem;
+  }
+
+  .review-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .review-card p:not(.review-stars) {
+    font-size: 1.06rem;
+    line-height: 1.65;
+  }
+
+  .review-card cite {
+    margin-top: auto;
+  }
+
+  .reviews-more {
+    margin-top: 1rem;
+    text-align: left;
   }
 }
 
