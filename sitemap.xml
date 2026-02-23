@@ -12,7 +12,17 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://username.github.io/repo/impianti-gas-verona/</loc>
+    <loc>https://username.github.io/repo/installazione-climatizzatori-verona-fgas/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://username.github.io/repo/assistenza-climatizzatori-verona/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://username.github.io/repo/impianti-gas-certificati-verona/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -20,6 +30,11 @@
     <loc>https://username.github.io/repo/caldaie-verona/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://username.github.io/repo/perdite-acqua-verona/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://username.github.io/repo/privacy.html</loc>

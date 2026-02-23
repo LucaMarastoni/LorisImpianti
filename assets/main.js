@@ -4,13 +4,12 @@
   var PHONE_NUMBER = "3517943571";
   var WHATSAPP_NUMBER = "393517943571";
 
-  window.dataLayer = window.dataLayer || [];
-
   function track(eventName, params) {
     var payload = Object.assign({ event: eventName, page: window.location.pathname }, params || {});
-    window.dataLayer.push(payload);
 
-    if (typeof window.google_tag_manager === "undefined") {
+    if (Array.isArray(window.dataLayer)) {
+      window.dataLayer.push(payload);
+    } else {
       console.log("[tracking]", payload);
     }
   }

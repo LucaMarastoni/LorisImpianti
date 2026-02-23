@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- TODO BASE CONFIG: SITE_URL=https://username.github.io/repo | BASE_PATH=/repo -->
-  <title>Idraulico Verona | Pronto Intervento 24H | Loris Impianti</title>
-  <meta name="description" content="Idraulico a Verona per perdite, guasti e impianti gas certificati. Intervento rapido 24H. Chiama Loris Impianti.">
+  <title>Idraulico Verona 24H e Climatizzatori | Loris Impianti</title>
+  <meta name="description" content="Idraulico a Verona per emergenze 24H, climatizzatori F-GAS, impianti gas e caldaie. Chiama 351 794 3571 per intervento rapido in provincia.">
   <meta name="robots" content="index,follow">
   <meta name="theme-color" content="#0b3a63">
   <meta name="format-detection" content="telephone=yes">
@@ -13,14 +13,14 @@
 
   <meta property="og:type" content="website">
   <meta property="og:locale" content="it_IT">
-  <meta property="og:title" content="Idraulico Verona | Pronto Intervento 24H | Loris Impianti">
-  <meta property="og:description" content="Idraulico a Verona per perdite, guasti e impianti gas certificati. Intervento rapido 24H.">
+  <meta property="og:title" content="Idraulico Verona 24H e Climatizzatori | Loris Impianti">
+  <meta property="og:description" content="Pronto intervento idraulico, climatizzatori F-GAS, impianti gas certificati e caldaie a Verona e provincia.">
   <meta property="og:url" content="https://username.github.io/repo/">
   <meta property="og:image" content="https://username.github.io/repo/assets/hero-optimized.jpg">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Idraulico Verona | Pronto Intervento 24H | Loris Impianti">
-  <meta name="twitter:description" content="Pronto intervento idraulico Verona per perdite, guasti e impianti gas certificati.">
+  <meta name="twitter:title" content="Idraulico Verona 24H e Climatizzatori | Loris Impianti">
+  <meta name="twitter:description" content="Pronto intervento idraulico, climatizzatori F-GAS, impianti gas certificati e caldaie a Verona.">
   <meta name="twitter:image" content="https://username.github.io/repo/assets/hero-optimized.jpg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,55 +32,71 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "PlumbingContractor",
-    "name": "Loris Impianti",
-    "url": "https://username.github.io/repo/",
-    "telephone": "+39 3517943571",
-    "areaServed": "Verona",
-    "serviceArea": {
-      "@type": "AdministrativeArea",
-      "name": "Provincia di Verona"
-    },
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Verona",
-      "addressCountry": "IT"
-    },
-    "openingHours": "Mo-Su 00:00-23:59",
-    "sameAs": [
-      "https://g.page/r/TODO-GOOGLE-BUSINESS-URL"
-    ],
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Servizi idraulici Verona",
-      "itemListElement": [
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Pronto intervento idraulico Verona"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Riparazione perdite Verona"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Impianti gas certificati Verona"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Caldaie Verona"}}
-      ]
-    }
+    "@graph": [
+      {
+        "@type": "Plumber",
+        "@id": "https://username.github.io/repo/#localbusiness",
+        "name": "Loris Impianti",
+        "url": "https://username.github.io/repo/",
+        "telephone": "+39 3517943571",
+        "areaServed": "Verona e provincia",
+        "serviceArea": {
+          "@type": "AdministrativeArea",
+          "name": "Provincia di Verona"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Verona",
+          "addressCountry": "IT"
+        },
+        "sameAs": [
+          "https://g.page/r/TODO-GOOGLE-BUSINESS-URL"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Servizi Loris Impianti",
+          "itemListElement": [
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Pronto intervento idraulico 24H"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Installazione climatizzatori F-GAS"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Assistenza climatizzatori"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Impianti gas certificati"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Caldaie e riscaldamento"}}
+          ]
+        }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://username.github.io/repo/#service-home",
+        "serviceType": "Servizi idraulici e climatizzatori",
+        "provider": {
+          "@id": "https://username.github.io/repo/#localbusiness"
+        },
+        "areaServed": "Verona e provincia"
+      }
+    ]
   }
   </script>
 </head>
-<body>
+<body class="home-page">
   <!-- GTM BODY PLACEHOLDER -->
   <a class="skip-link" href="#contenuto">Vai al contenuto principale</a>
 
   <header>
     <div class="top-bar" role="region" aria-label="Contatti rapidi">
       <div class="container top-bar-inner">
-        <p class="top-bar-text">Idraulico Verona - Pronto intervento idraulico Verona</p>
+        <a class="brand-link" href="./" aria-label="Loris Impianti home">
+          <img class="brand-logo" src="assets/logo.png" alt="Loris Impianti" width="260" height="173" loading="eager" fetchpriority="high" decoding="async">
+        </a>
         <div class="top-bar-actions">
           <a class="btn btn-phone" data-track="phone" href="tel:3517943571" aria-label="Chiama Loris Impianti al 351 794 3571">Chiama 351 794 3571</a>
-          <a class="btn btn-whatsapp" data-track="whatsapp" href="https://wa.me/393517943571?text=Buongiorno%2C%20ho%20bisogno%20di%20un%20intervento%20idraulico%20a%20Verona" target="_blank" rel="noopener" aria-label="Contatta su WhatsApp">WhatsApp</a>
+          <a class="btn btn-whatsapp" data-track="whatsapp" href="https://wa.me/393517943571?text=Buongiorno%2C%20ho%20bisogno%20di%20assistenza%20idraulica%20a%20Verona" target="_blank" rel="noopener" aria-label="Contatta su WhatsApp">WhatsApp</a>
         </div>
       </div>
     </div>
 
     <div class="mobile-sticky-cta" role="region" aria-label="Azioni rapide mobile">
       <a class="btn btn-phone" data-track="phone" href="tel:3517943571" aria-label="Chiama ora">Chiama ora</a>
-      <a class="btn btn-whatsapp" data-track="whatsapp" href="https://wa.me/393517943571?text=Buongiorno%2C%20ho%20bisogno%20di%20un%20intervento%20idraulico%20a%20Verona" target="_blank" rel="noopener" aria-label="Apri WhatsApp">WhatsApp</a>
+      <a class="btn btn-whatsapp" data-track="whatsapp" href="https://wa.me/393517943571?text=Buongiorno%2C%20ho%20bisogno%20di%20assistenza%20idraulica%20a%20Verona" target="_blank" rel="noopener" aria-label="Apri WhatsApp">WhatsApp</a>
     </div>
   </header>
 
@@ -88,36 +104,18 @@
     <section class="hero" aria-labelledby="hero-title">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <img
-            class="hero-logo"
-            src="assets/logo.png"
-            alt="Loris Impianti"
-            width="1536"
-            height="1024"
-            fetchpriority="high"
-            decoding="async"
-          >
+          <img class="hero-logo" src="assets/logo.png" alt="Loris Impianti" width="1536" height="1024" loading="eager" fetchpriority="high" decoding="async">
           <h1 id="hero-title">Idraulico a Verona - Pronto Intervento 24H</h1>
-          <p class="hero-subhead">Idraulico Verona per pronto intervento idraulico Verona, riparazione perdite Verona e impianti gas certificati Verona. Chiama ora per assistenza rapida.</p>
+          <p class="hero-subhead">Pronto intervento idraulico a Verona per perdite e guasti, impianti gas certificati, assistenza caldaie e climatizzatori.</p>
           <div class="hero-cta">
             <a class="btn btn-phone btn-xl btn-phone-split" data-track="phone" href="tel:3517943571" aria-label="Chiama ora 351 794 3571">
               <span class="cta-label">Chiama ora</span>
               <span class="cta-number">351 794 3571</span>
             </a>
-            <a class="btn btn-whatsapp btn-xl" data-track="whatsapp" href="https://wa.me/393517943571?text=Buongiorno%2C%20ho%20bisogno%20di%20un%20intervento%20idraulico%20a%20Verona" target="_blank" rel="noopener" aria-label="Contatta su WhatsApp">WhatsApp</a>
+            <a class="btn btn-whatsapp btn-xl" data-track="whatsapp" href="https://wa.me/393517943571?text=Buongiorno%2C%20mi%20serve%20un%20intervento%20a%20Verona" target="_blank" rel="noopener" aria-label="Contatta su WhatsApp">WhatsApp</a>
           </div>
-          <p class="hero-trust-note">Loris Impianti opera a Verona dal 2000.</p>
+          <p class="hero-trust-note">Loris Impianti: operativi da 25 anni su Verona e provincia.</p>
         </div>
-      </div>
-    </section>
-
-    <section class="trust-strip" aria-label="Elementi di affidabilità">
-      <div class="container trust-strip-grid">
-        <div class="trust-item"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm4.3 8.3-4.9 4.9a1 1 0 0 1-1.4 0L7.7 13a1 1 0 1 1 1.4-1.4l1.6 1.6 4.2-4.2a1 1 0 0 1 1.4 1.3Z"/></svg></span><p>20+ anni di esperienza</p></div>
-        <div class="trust-item"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 1a11 11 0 1 0 11 11A11 11 0 0 0 12 1Zm1 11.4V6a1 1 0 1 0-2 0v7a1 1 0 0 0 .3.7l4 4a1 1 0 0 0 1.4-1.4Z"/></svg></span><p>Disponibili 24h</p></div>
-        <div class="trust-item"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2 3 6v6c0 5 3.8 9.7 9 11 5.2-1.3 9-6 9-11V6Zm-1 14-4-4 1.4-1.4L11 13.2l4.6-4.6L17 10Z"/></svg></span><p>A norma di legge</p></div>
-        <div class="trust-item"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2a5 5 0 0 0-5 5v2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-1V7a5 5 0 0 0-5-5Zm-3 7V7a3 3 0 1 1 6 0v2Z"/></svg></span><p>Trasparenza</p></div>
-        <div class="trust-item"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 14.5 9 2.5 2.5 0 0 1 12 11.5Z"/></svg></span><p>Verona e provincia</p></div>
       </div>
     </section>
 
@@ -125,90 +123,115 @@
       <div class="container">
         <h2 id="recensioni-title">Recensioni dei clienti</h2>
         <p class="reviews-subtitle">Recensioni verificate su Google</p>
-        <!-- TODO: Inserire rating/review count reale, se verificato -->
         <div class="reviews-grid">
           <blockquote class="review-card">
             <p class="review-stars" aria-hidden="true">★★★★★</p>
-            <p>"Persona professionale, affidabile, disponibile e molto onesta. Ci ha aiutato in emergenza il giorno stesso."</p>
-            <cite>— Nicole Negrini, Verona</cite>
+            <p>"Persona professionale, affidabile, disponibile e molto onesta. Ci ha aiutato in una situazione di emergenza il giorno stesso. Se ci dovesse servire un professionista per questo tipo di lavori chiameremo sicuramente lui. Consigliamo a chiunque!"</p>
+            <cite>- Nicole Negrini, 1 mese fa</cite>
           </blockquote>
           <blockquote class="review-card">
             <p class="review-stars" aria-hidden="true">★★★★★</p>
-            <p>"Problema urgente in casa: Loris è intervenuto il pomeriggio stesso. Disponibile, affidabile e onesto nelle tariffe."</p>
-            <cite>— Carlo Barisoni, Verona</cite>
+            <p>"Ottimo professionista. Ho avuto un problema urgente in casa e Loris e intervenuto il pomeriggio stesso molto prontamente. E una persona disponibile e affidabile, ha fatto un ottimo lavoro ed e molto onesto con le sue tariffe. Lo consiglio a tutti!"</p>
+            <cite>- Carlo Barisoni, 3 mesi fa</cite>
           </blockquote>
           <blockquote class="review-card">
             <p class="review-stars" aria-hidden="true">★★★★★</p>
-            <p>"Chiamato durante le feste natalizie, è arrivato dopo mezz'ora e ha risolto il problema a un prezzo ragionevole."</p>
-            <cite>— Paola Bellomi, Verona</cite>
+            <p>"Avevo bisogno di installare un nuovo piano cottura. Nonostante le feste, nel giro di pochi giorni e venuto. Cordiale, bravo e preciso. Prezzi onesti. Lo consiglio."</p>
+            <cite>- A S, 1 mese fa</cite>
+          </blockquote>
+          <blockquote class="review-card">
+            <p class="review-stars" aria-hidden="true">★★★★★</p>
+            <p>"Chiamato per un'emergenza durante le feste natalizie, e arrivato dopo mezz'ora e ha risolto il problema (cambio rubinetto e installazione di quello nuovo) a un prezzo piu che ragionevole. Professionale e cortese."</p>
+            <cite>- Paola Bellomi, 1 mese fa</cite>
           </blockquote>
         </div>
-        <p class="reviews-more"><a href="#" rel="nofollow">Leggi tutte le recensioni su Google</a></p>
+        <p class="reviews-more"><a href="https://www.google.com/search?q=Loris+Impianti+Recensioni" rel="nofollow">Leggi tutte le recensioni su Google</a></p>
+
+      </div>
+    </section>
+
+    <section class="section climate-service" aria-labelledby="climatizzatori-title">
+      <div class="container narrow">
+        <h2 id="climatizzatori-title">Installazione Climatizzatori a Verona - Certificazione F-GAS</h2>
+        <p class="climate-intro">Installazione climatizzatori Verona con certificazione F-GAS, gestione gas refrigerante e lavorazioni a norma di legge.</p>
+        <ul class="climate-list" aria-label="Servizi climatizzatori">
+          <li>&#10003; Installazione climatizzatori mono e multi-split</li>
+          <li>&#10003; Certificazione F-GAS e documentazione tecnica</li>
+          <li>&#10003; Avviamento impianto e controllo funzionale</li>
+        </ul>
+        <p class="climate-extra">Installazione e gestione gas refrigeranti con certificazione F-GAS.</p>
+        <a class="btn btn-phone btn-xl climate-cta" data-track="phone" href="tel:3517943571" aria-label="Richiedi preventivo climatizzatore">Richiedi preventivo climatizzatore</a>
       </div>
     </section>
 
     <section class="section" id="servizi" aria-labelledby="servizi-title">
       <div class="container">
-        <h2 id="servizi-title">Servizi idraulici a Verona</h2>
+        <h2 id="servizi-title">Servizi principali</h2>
         <div class="services-grid">
           <article class="service-card">
-            <h3>Pronto intervento idraulico Verona</h3>
-            <p>Perdite d'acqua, guasti improvvisi e urgenze in casa: intervento rapido e risolutivo.</p>
-            <a class="mini-cta" href="pronto-intervento-idraulico-verona/">Scopri il servizio</a>
+            <h3>Pronto intervento idraulico 24H</h3>
+            <p>Urgenze idrauliche, guasti improvvisi e ripristino rapido.</p>
+            <a class="mini-cta" href="pronto-intervento-idraulico-verona/">Vai al servizio</a>
           </article>
           <article class="service-card">
-            <h3>Impianti gas certificati Verona</h3>
-            <p>Installazione e adeguamento impianti gas con documentazione chiara e lavori a norma.</p>
-            <a class="mini-cta" href="impianti-gas-verona/">Scopri il servizio</a>
+            <h3>Installazione climatizzatori F-GAS</h3>
+            <p>Installazione a norma e gestione refrigeranti certificata.</p>
+            <a class="mini-cta" href="installazione-climatizzatori-verona-fgas/">Vai al servizio</a>
           </article>
           <article class="service-card">
-            <h3>Caldaie Verona</h3>
-            <p>Installazione, manutenzione e sostituzione caldaie con assistenza professionale.</p>
-            <a class="mini-cta" href="caldaie-verona/">Scopri il servizio</a>
+            <h3>Assistenza climatizzatori</h3>
+            <p>Manutenzione, pulizia filtri e ricarica gas quando prevista.</p>
+            <a class="mini-cta" href="assistenza-climatizzatori-verona/">Vai al servizio</a>
+          </article>
+          <article class="service-card">
+            <h3>Impianti gas certificati</h3>
+            <p>Installazione e adeguamento impianti gas a norma di legge.</p>
+            <a class="mini-cta" href="impianti-gas-certificati-verona/">Vai al servizio</a>
+          </article>
+          <article class="service-card">
+            <h3>Caldaie e riscaldamento</h3>
+            <p>Installazione, manutenzione e assistenza su caldaie.</p>
+            <a class="mini-cta" href="caldaie-verona/">Vai al servizio</a>
+          </article>
+          <article class="service-card">
+            <h3>Riparazione perdite acqua</h3>
+            <p>Ricerca e riparazione perdite in casa, negozi e uffici.</p>
+            <a class="mini-cta" href="perdite-acqua-verona/">Vai al servizio</a>
           </article>
         </div>
-      </div>
-    </section>
-
-    <section class="emergency" aria-labelledby="emergenza-title">
-      <div class="container emergency-inner">
-        <h2 id="emergenza-title">Hai una perdita d'acqua o un guasto urgente? Evita danni maggiori. Interveniamo rapidamente.</h2>
-        <a class="btn btn-phone btn-xl" data-track="phone" href="tel:3517943571" aria-label="Chiama subito">Chiama subito</a>
       </div>
     </section>
 
     <section class="section" id="zona" aria-labelledby="zona-title">
       <div class="container narrow">
         <h2 id="zona-title">Zona di intervento</h2>
-        <p>Loris Impianti copre Verona citta e tutta la provincia, con interventi rapidi sia in centro sia nei comuni limitrofi.</p>
-        <p class="area-text">Copertura completa su tutta Verona e provincia, inclusi centro, quartieri e comuni limitrofi.</p>
-        <p>Per <strong>pronto intervento idraulico Verona</strong>, <strong>riparazione perdite Verona</strong> e <strong>impianti gas certificati Verona</strong> chiama <a class="text-link" data-track="phone" href="tel:3517943571">351 794 3571</a>.</p>
+        <p>Tutta la provincia di Verona e comuni limitrofi.</p>
       </div>
     </section>
 
     <section class="section faq" id="faq" aria-labelledby="faq-title">
       <div class="container narrow">
         <h2 id="faq-title">Domande frequenti</h2>
-        <details><summary>In quanto tempo arrivate per un'urgenza?</summary><p>Dipende dalla zona e dal traffico. Per pronto intervento idraulico Verona partiamo nel minor tempo possibile.</p></details>
-        <details><summary>Fate interventi 24 ore su 24?</summary><p>Gestiamo urgenze per perdite e guasti che richiedono intervento rapido.</p></details>
-        <details><summary>Rilasciate documentazione per impianti gas?</summary><p>Sì, gli impianti gas certificati Verona vengono realizzati con documentazione conforme.</p></details>
+        <details><summary>Fate pronto intervento anche la sera?</summary><p>Sì, per urgenze idrauliche gestiamo richieste 24H a Verona e provincia.</p></details>
+        <details><summary>Installate climatizzatori con certificazione F-GAS?</summary><p>Sì, eseguiamo installazione climatizzatori Verona con procedure e documentazione a norma di legge.</p></details>
+        <details><summary>Intervenite anche su impianti gas e caldaie?</summary><p>Sì, seguiamo impianti gas certificati, caldaie e manutenzioni tecniche.</p></details>
+        <details><summary>Come posso richiedere un preventivo?</summary><p>Puoi chiamare direttamente il 351 794 3571 o scriverci su WhatsApp.</p></details>
       </div>
     </section>
 
-    <section class="section about" id="chi-siamo" aria-labelledby="chi-siamo-title">
+    <section class="section">
       <div class="container narrow">
-        <h2 id="chi-siamo-title">Chi siamo</h2>
-        <p>Loris Impianti opera a Verona dal 2000 con professionalità, trasparenza e attenzione al cliente.</p>
+        <p class="other-services">Altri servizi: <a href="pronto-intervento-idraulico-verona/">Pronto intervento</a> · <a href="installazione-climatizzatori-verona-fgas/">Installazione climatizzatori</a> · <a href="assistenza-climatizzatori-verona/">Assistenza climatizzatori</a> · <a href="impianti-gas-certificati-verona/">Impianti gas</a> · <a href="caldaie-verona/">Caldaie</a> · <a href="perdite-acqua-verona/">Perdite acqua</a></p>
       </div>
     </section>
 
     <section class="section final-cta" aria-labelledby="cta-finale-title">
       <div class="container narrow">
-        <h2 id="cta-finale-title">Hai bisogno di un idraulico a Verona?</h2>
-        <p>Chiama subito o contattaci su WhatsApp.</p>
+        <h2 id="cta-finale-title">Hai bisogno di assistenza a Verona?</h2>
+        <p>Parla subito con Loris Impianti.</p>
         <div class="hero-cta center">
           <a class="btn btn-phone btn-xl btn-phone-split" data-track="phone" href="tel:3517943571" aria-label="Chiama ora 351 794 3571"><span class="cta-label">Chiama ora</span><span class="cta-number">351 794 3571</span></a>
-          <a class="btn btn-whatsapp btn-xl" data-track="whatsapp" href="https://wa.me/393517943571?text=Buongiorno%2C%20ho%20urgenza%20idraulica%20a%20Verona" target="_blank" rel="noopener" aria-label="Contatta su WhatsApp">WhatsApp</a>
+          <a class="btn btn-whatsapp btn-xl" data-track="whatsapp" href="https://wa.me/393517943571?text=Buongiorno%2C%20ho%20bisogno%20di%20assistenza%20a%20Verona" target="_blank" rel="noopener" aria-label="Contatta su WhatsApp">WhatsApp</a>
         </div>
       </div>
     </section>
