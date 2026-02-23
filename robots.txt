@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.lorisimpianti.it/sitemap.xml
+# TODO: sostituisci con URL finale GitHub Pages del repository
+Sitemap: https://username.github.io/repo/sitemap.xml

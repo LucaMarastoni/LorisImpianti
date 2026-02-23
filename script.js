@@ -91,11 +91,11 @@
     showCookieBanner();
   }
 
-  bindClickTracking(".track-phone", "click_phone", {
+  bindClickTracking("a[href^=\"tel:\"]", "click_phone", {
     number: PHONE_NUMBER
   });
 
-  bindClickTracking(".track-whatsapp", "click_whatsapp", {
+  bindClickTracking("a[href*=\"wa.me\"]", "click_whatsapp", {
     number: WHATSAPP_NUMBER
   });
 
