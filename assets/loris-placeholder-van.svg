@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="420" viewBox="0 0 640 420" role="img" aria-labelledby="title desc">
+  <title id="title">Placeholder foto aziendale Loris Impianti</title>
+  <desc id="desc">Segnaposto foto tecnico o furgone per aumentare fiducia locale.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#dbeaf8"/>
+      <stop offset="1" stop-color="#f4f9fe"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="420" fill="url(#bg)"/>
+  <rect x="58" y="232" width="432" height="112" rx="20" fill="#2d5e86"/>
+  <rect x="430" y="248" width="142" height="96" rx="16" fill="#3e759f"/>
+  <circle cx="160" cy="348" r="34" fill="#20384d"/>
+  <circle cx="160" cy="348" r="17" fill="#b6cfe2"/>
+  <circle cx="448" cy="348" r="34" fill="#20384d"/>
+  <circle cx="448" cy="348" r="17" fill="#b6cfe2"/>
+  <rect x="88" y="262" width="172" height="46" rx="10" fill="#ffffff" opacity="0.95"/>
+  <text x="102" y="292" font-family="Source Sans 3, sans-serif" font-size="24" font-weight="700" fill="#1d4d74">Loris Impianti</text>
+  <text x="88" y="78" font-family="Source Sans 3, sans-serif" font-size="26" font-weight="700" fill="#244866">Foto reale consigliata:</text>
+  <text x="88" y="112" font-family="Source Sans 3, sans-serif" font-size="22" fill="#2e5d82">tecnico o furgone aziendale a Verona</text>
+</svg>
