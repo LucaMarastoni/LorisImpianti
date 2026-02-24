@@ -143,25 +143,42 @@ p {
   border: 2px solid transparent;
   padding: 0.72rem 1rem;
   font-weight: 700;
-  transition: background-color 0.18s ease;
+  transform: translateY(0);
+  transition: background-color 0.18s ease, transform 0.14s ease, box-shadow 0.14s ease;
 }
 
 .btn-phone {
-  background: var(--accent);
+  background: linear-gradient(180deg, #37945d 0%, var(--accent) 100%);
   color: #fff;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.24), 0 3px 0 #1d5e3c, 0 9px 18px rgba(6, 33, 20, 0.26);
 }
 
 .btn-phone:hover {
-  background: var(--accent-dark);
+  background: linear-gradient(180deg, #308351 0%, var(--accent-dark) 100%);
+  transform: translateY(-1px);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.24), 0 4px 0 #184d31, 0 11px 22px rgba(6, 33, 20, 0.28);
+}
+
+.btn-phone:active {
+  transform: translateY(2px);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 0 #184d31, 0 4px 10px rgba(6, 33, 20, 0.2);
 }
 
 .btn-whatsapp {
-  background: var(--whatsapp);
+  background: linear-gradient(180deg, #7cc89c 0%, var(--whatsapp) 100%);
   color: #143324;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.32), 0 3px 0 #4c8b68, 0 9px 18px rgba(8, 45, 30, 0.2);
 }
 
 .btn-whatsapp:hover {
-  background: var(--whatsapp-dark);
+  background: linear-gradient(180deg, #71c192 0%, var(--whatsapp-dark) 100%);
+  transform: translateY(-1px);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 4px 0 #417758, 0 11px 22px rgba(8, 45, 30, 0.24);
+}
+
+.btn-whatsapp:active {
+  transform: translateY(2px);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.22), 0 1px 0 #417758, 0 4px 10px rgba(8, 45, 30, 0.16);
 }
 
 .btn-xl {
@@ -590,6 +607,15 @@ p {
 
   .hero .hero-cta .btn {
     width: 100%;
+  }
+
+  .btn-phone-split .cta-number {
+    font-size: 1.55rem;
+    line-height: 1;
+  }
+
+  .home-page .btn-phone-split .cta-number {
+    font-size: clamp(2.05rem, 8.2vw, 2.7rem);
   }
 }
 
