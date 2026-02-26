@@ -248,7 +248,7 @@ p {
   display: block;
   width: clamp(140px, 22vw, 240px);
   height: auto;
-  margin: -28px auto -24px;
+  margin: -14px auto -24px;
 }
 
 .hero h1 {
@@ -677,7 +677,7 @@ p {
   }
 
   .hero-logo {
-    margin: -14px auto -10px;
+    margin: -4px auto -10px;
   }
 
   .hero {
@@ -772,7 +772,7 @@ p {
   }
 
   .hero-logo {
-    margin: -36px auto -30px;
+    margin: -18px auto -30px;
   }
 
   .hero {
