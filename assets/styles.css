@@ -583,12 +583,120 @@ p {
   color: #aee6ff;
 }
 
+.legal-cookie-manage {
+  background: none;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  color: #aee6ff;
+  font: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+
 .copyright {
   border-top: 1px solid rgba(255, 255, 255, 0.14);
   margin-top: 1rem;
   padding-top: 1rem;
   text-align: center;
   font-size: 0.95rem;
+}
+
+.cookie-consent {
+  position: fixed;
+  right: 14px;
+  left: auto;
+  bottom: 14px;
+  z-index: 90;
+  width: min(360px, calc(100vw - 28px));
+  padding: 0;
+}
+
+.cookie-consent[hidden] {
+  display: none;
+}
+
+.cookie-consent-inner {
+  width: 100%;
+  margin: 0;
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(10, 39, 64, 0.22);
+  padding: 0.72rem;
+}
+
+.cookie-consent-text {
+  color: #233d53;
+  margin: 0 0 0.56rem;
+  font-size: 0.87rem;
+  line-height: 1.35;
+}
+
+.cookie-consent .text-link {
+  color: #0d4d82;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.cookie-consent-text-small {
+  margin-top: 0.08rem;
+}
+
+.cookie-consent-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.cookie-consent-btn {
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 0.42rem 0.62rem;
+  font: inherit;
+  font-weight: 700;
+  font-size: 0.86rem;
+  cursor: pointer;
+}
+
+.cookie-consent-btn-primary {
+  background: var(--primary);
+  color: #fff;
+}
+
+.cookie-consent-btn-secondary {
+  background: #eff4f8;
+  border-color: #d2dde8;
+  color: #1f3b54;
+}
+
+.cookie-consent-btn-outline {
+  background: #fff;
+  border-color: #d2dde8;
+  color: #1f3b54;
+}
+
+.cookie-consent-panel {
+  margin-top: 0.55rem;
+  padding-top: 0.55rem;
+  border-top: 1px solid #e2ebf4;
+}
+
+.cookie-consent-panel[hidden] {
+  display: none;
+}
+
+.cookie-consent-option {
+  display: block;
+  margin: 0 0 0.48rem;
+  color: #1f3b54;
+  font-weight: 600;
+  font-size: 0.88rem;
+}
+
+.cookie-consent-option input {
+  margin-right: 0.45rem;
 }
 
 .mobile-sticky-cta {
@@ -651,6 +759,21 @@ p {
 
   body {
     padding-bottom: 86px;
+  }
+
+  .cookie-consent {
+    right: 8px;
+    bottom: 94px;
+    width: min(340px, calc(100vw - 16px));
+    padding: 0;
+  }
+
+  .cookie-consent-inner {
+    width: 100%;
+  }
+
+  .cookie-consent-btn {
+    flex: 1 1 auto;
   }
 
   .hero .hero-cta .btn {
