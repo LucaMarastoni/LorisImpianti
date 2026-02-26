@@ -246,7 +246,7 @@ p {
 
 .hero-logo {
   display: block;
-  width: clamp(360px, 62vw, 640px);
+  width: clamp(140px, 22vw, 240px);
   height: auto;
   margin: -28px auto -24px;
 }
