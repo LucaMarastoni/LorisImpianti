@@ -254,11 +254,13 @@ p {
 .hero h1 {
   margin: 0.08rem 0 0.45rem;
   color: #fff;
+  text-align: center;
 }
 
 .hero-subhead {
   color: #e7f0f7;
   margin-bottom: 0.75rem;
+  text-align: center;
 }
 
 .hero-cta {
@@ -368,6 +370,42 @@ p {
   margin-bottom: 0.8rem;
   color: var(--muted);
   font-weight: 600;
+}
+
+.reviews-underline {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 2px;
+}
+
+.google-logo-word {
+  font-family: "Google Sans", "Product Sans", "Segoe UI", Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.google-logo-word span:nth-child(1) {
+  color: #4285f4;
+}
+
+.google-logo-word span:nth-child(2) {
+  color: #ea4335;
+}
+
+.google-logo-word span:nth-child(3) {
+  color: #fbbc05;
+}
+
+.google-logo-word span:nth-child(4) {
+  color: #4285f4;
+}
+
+.google-logo-word span:nth-child(5) {
+  color: #34a853;
+}
+
+.google-logo-word span:nth-child(6) {
+  color: #ea4335;
 }
 
 .reviews-grid {
