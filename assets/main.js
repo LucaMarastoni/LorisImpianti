@@ -5,6 +5,9 @@
   var WHATSAPP_NUMBER = "393517943571";
   var GA4_MEASUREMENT_ID = "G-XXXXXXXXXX"; // TODO: inserire ID reale GA4
   var GOOGLE_ADS_ID = "AW-17976835333";
+  var GOOGLE_ADS_PHONE_SEND_TO = "AW-17976835333/yH6vCNW4xoEcEIX6gvxC";
+  var GOOGLE_ADS_PHONE_VALUE = 1.0;
+  var GOOGLE_ADS_PHONE_CURRENCY = "EUR";
 
   var CONSENT_KEY = "loris_cookie_consent";
   var CONSENT_VERSION = "2026-02-26";
@@ -341,6 +344,36 @@
     }
   }
 
+  function gtagReportConversion(url) {
+    var callbackExecuted = false;
+    var callback = function () {
+      if (callbackExecuted) {
+        return;
+      }
+      callbackExecuted = true;
+      if (typeof url !== "undefined") {
+        window.location = url;
+      }
+    };
+
+    if (!Boolean(activeConsent && activeConsent.marketing) || !hasValidId(GOOGLE_ADS_ID, "AW-")) {
+      callback();
+      return false;
+    }
+
+    window.gtag("event", "conversion", {
+      send_to: GOOGLE_ADS_PHONE_SEND_TO,
+      value: GOOGLE_ADS_PHONE_VALUE,
+      currency: GOOGLE_ADS_PHONE_CURRENCY,
+      event_callback: callback
+    });
+
+    window.setTimeout(callback, 800);
+    return false;
+  }
+
+  window.gtag_report_conversion = gtagReportConversion;
+
   function inferRelativeRoot() {
     var segments = window.location.pathname.split("/").filter(Boolean);
     if (!segments.length) {
@@ -552,6 +585,11 @@
         target: href,
         track: link.dataset.track || "phone"
       });
+
+      if (Boolean(activeConsent && activeConsent.marketing)) {
+        event.preventDefault();
+        gtagReportConversion(href);
+      }
       return;
     }
 
