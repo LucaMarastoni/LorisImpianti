@@ -4,7 +4,7 @@
   var PHONE_NUMBER = "3517943571";
   var WHATSAPP_NUMBER = "393517943571";
   var GA4_MEASUREMENT_ID = "G-XXXXXXXXXX"; // TODO: inserire ID reale GA4
-  var GOOGLE_ADS_ID = "AW-XXXXXXXXX"; // TODO: inserire ID reale Google Ads
+  var GOOGLE_ADS_ID = "AW-17976835333";
 
   var CONSENT_KEY = "loris_cookie_consent";
   var CONSENT_VERSION = "2026-02-26";
