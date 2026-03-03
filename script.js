@@ -3,7 +3,7 @@
 
   const PHONE_NUMBER = "3517943571";
   const WHATSAPP_NUMBER = "393517943571";
-  const GA4_MEASUREMENT_ID = "G-XXXXXXXXXX"; // TODO: sostituire con ID reale GA4
+  const GA4_MEASUREMENT_ID = "G-SFYXTWMC94";
   const CONSENT_KEY = "loris_cookie_consent";
 
   const cookieBanner = document.getElementById("cookie-consent");
